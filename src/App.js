@@ -33,10 +33,10 @@ function App(){
     return x * fact(x - 1);
 }
 
-// const arr = []
+// function for find the prime number.
 let prime=()=>{
 const prime_number = []
-for(var i=2;i<=100;i++){
+for(var i=1;i<=100;i++){
   for(var j=2;j<i;j++ ){
 
     if(i%j === 0){ 													
@@ -51,8 +51,19 @@ for(var i=2;i<=100;i++){
 return prime_number;
 }
 
+// array storing names of cities
+var cities=['bangaluru','mangaluru','ballery','vijaypura','bellagavi','chikamagaluru','kalaburagi','mysuru','hosapete','shivamogga','hubbali','tumakuru'];
 
-  return(
+var arr=cities.sort((a,b)=>
+a.localeCompare(b));
+ 
+
+
+// cities.sort((a,b)=>a-b);
+// console.log(cities);
+
+
+ return(
     <div className="App">
       <b>Task 1<br/><h2>Q1. In index.js create an arrow function for calculating a factorial, then pass an integer and display its factorial as root element inside heading tag.</h2></b>
       <p>factorial of 5 is :{fact(5)}</p>
@@ -60,9 +71,12 @@ return prime_number;
       <b>Task 2<br/><h2>Q2. In index.js make an arrow function Prime() that prints all prime nos. from 1 to 100.</h2></b>
       <p>prime numbers are: {prime().map((item) => <li>{item}</li>)}</p>
       <hr></hr>
+      <b>Task3<br/><h2>Q3. Make an array storing names of cities, then print them as unordered list in ascending order using arrow function and map</h2></b>
+      <p>{<ul><li>{arr.map((item)=><li>{item}</li>)}</li></ul>}</p>
     </div>
   );
 
-  }
+} 
 export default App;
 
+ 
