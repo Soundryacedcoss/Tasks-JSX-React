@@ -1,28 +1,4 @@
-// import logo from './logo.svg';
-// import './App.css';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
 function App(){
   let fact = x => {
     if (x % 1 !== 0) {
@@ -59,8 +35,8 @@ a.localeCompare(b));
 
 
 
-// here i am searching the name of city whose first letter is "s"
-var arr1=cities.filter((city)=>city.startsWith("s"));
+// here i am searching the name of city whose first letter is "b"
+var arr1=cities.filter((city)=>city.startsWith("b"));
 console.log(arr1);
 
  return(
@@ -75,7 +51,7 @@ console.log(arr1);
       <p>{<ul><li>{arr.map((item)=><li>{item}</li>)}</li></ul>}</p>
       <hr />
       <b>Task 4<br/>Q4. In the above task find all the cities whose name start with 'B'</b>
-      <p>{arr1}</p> 
+      <p>{<ul><li>{arr1.map((item)=><li>{item}</li>)}</li></ul>}</p> 
    </div>
   );
 
